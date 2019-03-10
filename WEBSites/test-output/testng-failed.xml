@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="AutomationJourney2019.WEBSites.Udemy.SignUpNewUserTestClass">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="initializeDriver"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="UdemySignUpNewUser"/>
+          <include name="StopDriver"/>
+          <include name="ScreenshotOnFailure"/>
+        </methods>
+      </class> <!-- AutomationJourney2019.WEBSites.Udemy.SignUpNewUserTestClass -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

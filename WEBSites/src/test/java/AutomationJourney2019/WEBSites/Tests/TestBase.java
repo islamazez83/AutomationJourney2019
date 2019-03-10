@@ -1,23 +1,10 @@
 package AutomationJourney2019.WEBSites.Tests;
 
-import org.testng.annotations.Test;
-import org.testng.internal.TestResult;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-
-import java.util.HashMap;
-import java.awt.List;
 import java.net.URI;
-import java.net.URL;
-import java.sql.Time;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.Duration;
-import java.time.Year;
-import java.time.YearMonth;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -43,18 +30,18 @@ import org.openqa.selenium.support.ui.Wait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import org.testng.internal.TestResult;
 
 public class TestBase {
 	private static WebDriver driver;
 	private static TestResult result;
 	private static String browserName;
-	private static URI[] WebSitesURL = new URI[] { URI.create("www.udemy.com")};
-
-
-	@Test
-	public void f() {
-	}
+	private static URI[] WebSitesURL = new URI[] { URI.create("https://www.udemy.com")};
+	
 	@BeforeMethod
 	public void beforeMethod() {
 	}
@@ -224,22 +211,28 @@ public class TestBase {
         }
         driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-		driver.navigate().to(WebSitesURL[0].toString());
+		//driver.navigate().to(getWebSitesURL()[0].toString());
     }
 	
-	@AfterTest
+	@AfterMethod
 	public static void ScreenshotOnFailure(ITestResult result) 
 	{
 		if (result.getStatus() == ITestResult.FAILURE) {
-			DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+			DateFormat dateFormat = new SimpleDateFormat("MMddHHmmss");
 			Date date = new Date();
-			Helper.captureScreenshot(driver, result.getName()+ dateFormat.format(date)+ ".png");
+			Helper.captureScreenshot(driver, result.getName()+ "\\" +dateFormat.format(date));
 		}
 	}
 	
 	@AfterSuite
 	public static void StopDriver() 
 	{
-		driver.quit();
+		//driver.quit();
+	}
+	public static URI[] getWebSitesURL() {
+		return WebSitesURL;
+	}
+	public static void setWebSitesURL(URI[] webSitesURL) {
+		WebSitesURL = webSitesURL;
 	}
 }
