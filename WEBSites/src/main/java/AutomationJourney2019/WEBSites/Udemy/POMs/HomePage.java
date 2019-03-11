@@ -16,12 +16,12 @@ public class HomePage extends PageBase {
 	@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[4]/div[6]/div/button")
 	private WebElement SignUpButton;
 	
-	@FindBy(linkText = "Log In")
+	@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[4]/div[5]/div/button")
 	private WebElement LoginButton;
 	
 	public void SignUpNewUser() 
 	{
-		clickButton(LoginButton);
+		clickButton(SignUpButton);
 	}
 
 }

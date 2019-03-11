@@ -7,9 +7,12 @@ import AutomationJourney2019.WEBSites.Udemy.POMs.HomePage;
 
 public class SignUpNewUserTestClass extends TestBase {
 	
+	HomePage HomePageObject;
+	
 	@Test
   public void UdemySignUpNewUser() {
-		HomePage HomePageObject = new HomePage(getDriver());
+		//getDriver().manage().deleteAllCookies();
+		HomePageObject = new HomePage(getDriver());
 		getDriver().navigate().to(getWebSitesURL()[0].toString());
 		HomePageObject.SignUpNewUser();
   }

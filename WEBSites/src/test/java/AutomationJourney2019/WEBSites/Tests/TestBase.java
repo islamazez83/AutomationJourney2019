@@ -13,6 +13,7 @@ import javax.swing.table.DefaultTableModel;
 
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -148,12 +149,19 @@ public class TestBase {
 
 	public static ChromeOptions ChromeOption()
     {
+		Proxy proxy = new Proxy();
+		proxy.setHttpProxy("41.79.233.45:8080");
+		proxy.setSslProxy("41.79.233.45:8080");
+//		DesiredCapabilities caps = new DesiredCapabilities().chrome();
+//		caps.setCapability("proxy", proxy);
+		//Proxy = "88.157.149.250:8080"; 
         ChromeOptions options = new ChromeOptions();
         options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
         chromePrefs.put("profile.default.content_settings.popups", 0);
 		options.setExperimentalOption("prefs", chromePrefs);
 		options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		options.setCapability(CapabilityType.PROXY, proxy);
 		return options;
     }
 	

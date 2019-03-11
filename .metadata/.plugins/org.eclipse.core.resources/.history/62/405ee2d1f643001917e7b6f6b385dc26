@@ -1,0 +1,19 @@
+package AutomationJourney2019.WEBSites.Udemy;
+
+import org.testng.annotations.Test;
+
+import AutomationJourney2019.WEBSites.Tests.TestBase;
+import AutomationJourney2019.WEBSites.Udemy.POMs.HomePage;
+
+public class SignUpNewUserTestClass extends TestBase {
+
+	HomePage HomePageObject;
+	public SignUpNewUserTestClass() {
+		HomePageObject = new HomePage(getDriver());
+	}
+	@Test
+	public void UdemySignUpNewUser() {
+		getDriver().navigate().to(getWebSitesURL()[0].toString());
+		HomePageObject.SignUpNewUser();
+	}
+}
