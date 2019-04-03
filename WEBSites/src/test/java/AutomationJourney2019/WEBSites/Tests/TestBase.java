@@ -150,8 +150,8 @@ public class TestBase {
 	public static ChromeOptions ChromeOption()
     {
 		Proxy proxy = new Proxy();
-		proxy.setHttpProxy("41.79.233.45:8080");
-		proxy.setSslProxy("41.79.233.45:8080");
+		proxy.setHttpProxy("91.187.93.166:80");
+		//proxy.setSslProxy("91.187.93.166:80");
 //		DesiredCapabilities caps = new DesiredCapabilities().chrome();
 //		caps.setCapability("proxy", proxy);
 		//Proxy = "88.157.149.250:8080"; 
