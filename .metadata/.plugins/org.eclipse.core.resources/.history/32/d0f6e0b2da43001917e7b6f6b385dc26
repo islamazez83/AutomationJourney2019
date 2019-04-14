@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<suite name="Automation Journey Resgression Suite">
-  <paramater name="browser" value="chrome"/>
-  <test name="Test">
-    <classes>
-      
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->

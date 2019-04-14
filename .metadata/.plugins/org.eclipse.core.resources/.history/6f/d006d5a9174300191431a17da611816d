@@ -1,9 +1,0 @@
-package AutomationJourney2019.WEBSites.Udemy;
-
-import org.testng.annotations.Test;
-
-public class SignUpNewUserTestClass {
-  @Test
-  public void f() {
-  }
-}

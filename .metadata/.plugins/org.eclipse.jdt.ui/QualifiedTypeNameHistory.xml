@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Wait"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.FluentWait"/>
     <fullyQualifiedTypeName name="java.util.function.Function"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="org.testng.Assert"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedCondition"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.NoSuchElementException"/>
@@ -27,7 +22,6 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxOptions"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeOptions"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.remote.CapabilityType"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.edge.EdgeOptions"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerOptions"/>
@@ -48,10 +42,22 @@
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="org.testng.annotations.AfterSuite"/>
     <fullyQualifiedTypeName name="AutomationJourney2019.WEBSites.Pages.PageBase"/>
+    <fullyQualifiedTypeName name="AutomationJourney2019.WEBSites.Udemy.POMs.HomePage"/>
+    <fullyQualifiedTypeName name="org.testng.ITestContext"/>
+    <fullyQualifiedTypeName name="AutomationJourney2019.WEBSites.Tests.TestBase"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+    <fullyQualifiedTypeName name="AutomationJourney2019.WEBSites.DataFileReader"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-    <fullyQualifiedTypeName name="AutomationJourney2019.WEBSites.Udemy.POMs.HomePage"/>
+    <fullyQualifiedTypeName name="AutomationJourney2019.WEBSites.Udemy.Data.JSONDataReader"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.Cookie"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="AutomationJourney2019.WEBSites.Tests.TestBase"/>
-    <fullyQualifiedTypeName name="org.testng.ITestContext"/>
 </qualifiedTypeNameHistroy>

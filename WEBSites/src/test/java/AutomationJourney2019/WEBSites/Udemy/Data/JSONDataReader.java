@@ -10,27 +10,29 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.DataProvider;
 
+import AutomationJourney2019.WEBSites.DataFileReader;
+
 public class JSONDataReader {
   
   @DataProvider
-  public Object[][] dp() {
-	  Object[][] Data = new Object[3][2];
-	  String FilePath = System.getProperty("user.dir")+"/WEBSites/src/test/java/AutomationJourney2019/WEBSites/Udemy/Data/UdemyUserAccountsData.json";
-	  File srcFile = new File(FilePath);
-	  JSONParser parser = new JSONParser();
+  public Object[][] SignupUsersDP() {
+	  Object[][] Data = new Object[2][3];
+	  int usersCount = 0;
 	  try {
-		JSONArray JArray = (JSONArray) parser.parse(new FileReader(srcFile));
-		for(Object jsonObj : JArray) 
+		  DataFileReader DFR = new DataFileReader();
+		JSONArray SignupUsers = DFR.ReadJSONData("Udemy/UdemyUserAccountsData.json");		
+		for(Object jsonObj : SignupUsers) 
 		{
 			JSONObject person = (JSONObject) jsonObj;
-			if(person.get("IsUsed") == "No") 
+			if(person.get("IsUsed").toString().equals("No")) 
 			{
-				Data[0][0] = "Full name";
-				Data[0][1] = person.get("Full name");
-				Data[1][0] = "Email";
-				Data[1][1] = person.get("Email");
-				Data[2][0] = "Password";
-				Data[2][1] = person.get("Password");
+				Data[usersCount][0] = person.get("Full name");
+				Data[usersCount][1] = person.get("Email");
+				Data[usersCount][2] = person.get("Password");
+				usersCount++;
+				if (usersCount == Data.length) {
+					break;
+				}
 			}
 		}
 	} catch (FileNotFoundException e) {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Registeration regression suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="firefox"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass">
@@ -10,7 +10,7 @@
           <include name="initializeDriver"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
-          <include name="UdemySignUpNewUser"/>
+          <include name="UdemySignUpNewUser" invocation-numbers="0 1 2"/>
           <include name="StopDriver"/>
           <include name="ScreenshotOnFailure"/>
         </methods>

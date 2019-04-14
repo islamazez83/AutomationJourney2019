@@ -19,9 +19,22 @@ public class HomePage extends PageBase {
 	@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[4]/div[5]/div/button")
 	private WebElement LoginButton;
 	
-	public void SignUpNewUser() 
+	@FindBy(name = "fullname")
+	private WebElement FullNameTextBox;
+	
+	@FindBy(name = "email")
+	private WebElement EmailTextBox;
+	
+	@FindBy(name = "password")
+	private WebElement PasswordTextBox;
+	
+	public void SignUpNewUser(String FullName, String Email, String Password) 
 	{
 		clickButton(SignUpButton);
+		waitForElementToBe("elementToBeClickable", FullNameTextBox);
+		setTextElementText(FullNameTextBox, FullName);
+		setTextElementText(EmailTextBox, Email);
+		setTextElementText(PasswordTextBox, Password);
 	}
 
 }

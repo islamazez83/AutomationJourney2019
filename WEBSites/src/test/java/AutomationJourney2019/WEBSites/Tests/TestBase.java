@@ -139,7 +139,7 @@ public class TestBase {
 	public static FirefoxOptions FirefoxOption()
 	{
 		FirefoxOptions Options = new FirefoxOptions();
-		Options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+		//Options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 		Options.addPreference("browser.download.folderList", 2);
 		Options.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf");
 		Options.addPreference("browser.download.manager.showWhenStarting", false);
@@ -148,20 +148,22 @@ public class TestBase {
 	}
 
 	public static ChromeOptions ChromeOption()
-    {
-		Proxy proxy = new Proxy();
-		proxy.setHttpProxy("91.187.93.166:80");
+    {		
+		/*Proxy proxy = new Proxy();
+		proxy.setHttpProxy("159.8.114.37:80");*/
 		//proxy.setSslProxy("91.187.93.166:80");
 //		DesiredCapabilities caps = new DesiredCapabilities().chrome();
 //		caps.setCapability("proxy", proxy);
 		//Proxy = "88.157.149.250:8080"; 
         ChromeOptions options = new ChromeOptions();
+        //options.addArguments("--incognito");
         options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
         chromePrefs.put("profile.default.content_settings.popups", 0);
 		options.setExperimentalOption("prefs", chromePrefs);
 		options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		options.setCapability(CapabilityType.PROXY, proxy);
+		//options.setCapability(CapabilityType.PROXY, proxy);
+		//options.setPreference("browser.cache.disk.parent_directory", PATH_TO_MY_PROFILE_CACHE);
 		return options;
     }
 	
@@ -193,21 +195,26 @@ public class TestBase {
             //Driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(90);
             //Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(75);
             driver.manage().timeouts().setScriptTimeout(45, TimeUnit.SECONDS);
+            driver.manage().deleteAllCookies();
+            
         }
         else if (browserName.toLowerCase().equals("firefox"))
         {
         	System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Sources\\geckodriver.exe");
             driver = new FirefoxDriver(/*new System.Uri(Assembly.GetExecutingAssembly().CodeBase).AbsolutePath.Replace("%20", " ").TrimEnd("CSAutomatedUnitTest.DLL".ToCharArray()),*/ FirefoxOption());
+            driver.manage().deleteAllCookies();
         }
         else if (browserName.toLowerCase().equals("ie"))
         {
         	System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\Sources\\IEDriverServer.exe");
             driver = new InternetExplorerDriver(/*new System.Uri(Assembly.GetExecutingAssembly().CodeBase).AbsolutePath.Replace("%20", " ").TrimEnd("CSAutomatedUnitTest.DLL".ToCharArray()),*/ IEOptions());
+            driver.manage().deleteAllCookies();
         }
         else if (browserName.toLowerCase().equals("edge"))
         {
         	System.setProperty("webdriver.edge.drive", System.getProperty("user.dir") + "\\Sources\\MicrosoftWebDriver.exe");
             driver = new EdgeDriver(/*new System.Uri(Assembly.GetExecutingAssembly().CodeBase).AbsolutePath.Replace("%20", " ").TrimEnd("CSAutomatedUnitTest.DLL".ToCharArray()),*/ EDGEOptions());
+            driver.manage().deleteAllCookies();
         }
         else if (browserName.toLowerCase().equals("chrome-headless"))
         {
@@ -216,6 +223,7 @@ public class TestBase {
             options.addArguments("--headless");
             options.addArguments("--window-size=1920,1080");
             driver = new ChromeDriver(options);
+            driver.manage().deleteAllCookies();
         }
         driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);

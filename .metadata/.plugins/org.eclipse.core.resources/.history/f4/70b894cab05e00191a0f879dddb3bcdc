@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Registeration regression suite">
+<parameter name="browser" value="chrome"/>
+  <test name="Test">
+    <classes>
+      <class name="AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass" />
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
