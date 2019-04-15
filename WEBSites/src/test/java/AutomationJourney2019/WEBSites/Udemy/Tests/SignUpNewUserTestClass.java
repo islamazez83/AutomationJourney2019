@@ -1,8 +1,7 @@
 package AutomationJourney2019.WEBSites.Udemy.Tests;
 
-import org.openqa.selenium.By;
+import static org.testng.Assert.assertTrue;
 import org.testng.annotations.Test;
-
 import AutomationJourney2019.WEBSites.Tests.TestBase;
 import AutomationJourney2019.WEBSites.Udemy.Data.JSONDataReader;
 import AutomationJourney2019.WEBSites.Udemy.POMs.HomePage;
@@ -25,5 +24,8 @@ public class SignUpNewUserTestClass extends TestBase {
 		//Thread.sleep(3000);
 		//getDriver().findElements(By.tagName("iframe")).get(1);
 		HomePageObject.SignUpNewUser(FullName, Email, Password);
+		assertTrue(HomePageObject.UserAvatar.isDisplayed());
+		HomePageObject.LogOut();
+		assertTrue(HomePageObject.LoggedOutLabel.isDisplayed());
   }
 }

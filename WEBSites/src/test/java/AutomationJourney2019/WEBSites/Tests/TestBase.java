@@ -7,13 +7,10 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.PageLoadStrategy;
-import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;

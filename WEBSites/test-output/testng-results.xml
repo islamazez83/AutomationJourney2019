@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-04-14T13:00:47Z" name="Registeration regression suite" finished-at="2019-04-14T13:02:20Z" duration-ms="92831">
+  <suite started-at="2019-04-15T13:07:58Z" name="Registeration regression suite" finished-at="2019-04-15T13:11:45Z" duration-ms="226647">
     <groups>
     </groups>
-    <test started-at="2019-04-14T13:00:47Z" name="Test" finished-at="2019-04-14T13:02:20Z" duration-ms="92831">
+    <test started-at="2019-04-15T13:07:58Z" name="Test" finished-at="2019-04-15T13:11:45Z" duration-ms="226647">
       <class name="AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:00:42Z" name="initializeDriver" finished-at="2019-04-14T13:00:47Z" duration-ms="5107" status="PASS">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:07:53Z" name="initializeDriver" finished-at="2019-04-15T13:07:58Z" duration-ms="5005" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,42 +18,66 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:00:48Z" name="beforeMethod" finished-at="2019-04-14T13:00:48Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:07:59Z" name="beforeMethod" finished-at="2019-04-15T13:07:59Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:00:48Z" name="UdemySignUpNewUser" data-provider="SignupUsersDP" finished-at="2019-04-14T13:01:30Z" duration-ms="42385" status="FAIL">
+        <test-method signature="UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:07:59Z" name="UdemySignUpNewUser" data-provider="SignupUsersDP" finished-at="2019-04-15T13:11:44Z" duration-ms="225550" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Full name]]>
+                <![CDATA[Islam Abd Alazez Abd Alhamed]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Shady Youssri]]>
+                <![CDATA[islamaldomyate@gmail.com]]>
               </value>
             </param>
             <param index="2">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[talkha2014]]>
+              </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
+              <![CDATA[Failed to convert data to an object
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISLAMABDALAZEZP', ip: '10.8.6.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 20256, moz:profile: C:\Users\islam.ARCOM\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 070da61b-a510-498b-be52-698b10037b69
+*** Element info: {Using=xpath, value=/html/body/div[1]/div[2]/div[1]/div[4]/div[6]/div/button}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
-at AutomationJourney2019.WEBSites.Pages.PageBase.setTextElementText(PageBase.java:35)
-at AutomationJourney2019.WEBSites.Udemy.POMs.HomePage.SignUpNewUser(HomePage.java:37)
-at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:27)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to convert data to an object
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISLAMABDALAZEZP', ip: '10.8.6.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 20256, moz:profile: C:\Users\islam.ARCOM\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 070da61b-a510-498b-be52-698b10037b69
+*** Element info: {Using=xpath, value=/html/body/div[1]/div[2]/div[1]/div[4]/div[6]/div/button}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy17.click(Unknown Source)
+at AutomationJourney2019.WEBSites.Pages.PageBase.clickButton(PageBase.java:30)
+at AutomationJourney2019.WEBSites.Udemy.POMs.HomePage.SignUpNewUser(HomePage.java:49)
+at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,11 +105,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UdemySignUpNewUser -->
-        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:01:30Z" name="ScreenshotOnFailure" finished-at="2019-04-14T13:01:30Z" duration-ms="211" status="PASS">
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:11:44Z" name="ScreenshotOnFailure" finished-at="2019-04-15T13:11:45Z" duration-ms="1051" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -93,47 +117,45 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotOnFailure -->
-        <test-method signature="UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:01:30Z" name="UdemySignUpNewUser" data-provider="SignupUsersDP" finished-at="2019-04-14T13:01:40Z" duration-ms="9988" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Email]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[arcomtest26@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISLAMABDALAZEZP', ip: '10.8.6.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 20256, moz:profile: C:\Users\islam.ARCOM\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 070da61b-a510-498b-be52-698b10037b69]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
-at AutomationJourney2019.WEBSites.Pages.PageBase.setTextElementText(PageBase.java:35)
-at AutomationJourney2019.WEBSites.Udemy.POMs.HomePage.SignUpNewUser(HomePage.java:37)
-at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:27)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISLAMABDALAZEZP', ip: '10.8.6.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 20256, moz:profile: C:\Users\islam.ARCOM\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 070da61b-a510-498b-be52-698b10037b69
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at AutomationJourney2019.WEBSites.Tests.Helper.captureScreenshot(Helper.java:24)
+at AutomationJourney2019.WEBSites.Tests.TestBase.ScreenshotOnFailure(TestBase.java:236)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -155,75 +177,58 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UdemySignUpNewUser -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:01:30Z" name="beforeMethod" finished-at="2019-04-14T13:01:30Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:01:30Z" name="afterMethod" finished-at="2019-04-14T13:01:30Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:01:40Z" name="ScreenshotOnFailure" finished-at="2019-04-14T13:01:40Z" duration-ms="153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UdemySignUpNewUser status=FAILURE method=SignUpNewUserTestClass.UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:01:40Z" name="afterMethod" finished-at="2019-04-14T13:01:40Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:11:45Z" name="afterMethod" finished-at="2019-04-15T13:11:45Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:01:40Z" name="beforeMethod" finished-at="2019-04-14T13:01:40Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:11:45Z" name="beforeMethod" finished-at="2019-04-15T13:11:45Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:01:40Z" name="UdemySignUpNewUser" data-provider="SignupUsersDP" finished-at="2019-04-14T13:02:20Z" duration-ms="39920" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Password]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[P@ssw0rd85]]>
-              </value>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
+        <test-method signature="UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:11:45Z" name="UdemySignUpNewUser" data-provider="SignupUsersDP" finished-at="2019-04-15T13:11:45Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISLAMABDALAZEZP', ip: '10.8.6.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 20256, moz:profile: C:\Users\islam.ARCOM\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 070da61b-a510-498b-be52-698b10037b69]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
-at AutomationJourney2019.WEBSites.Pages.PageBase.setTextElementText(PageBase.java:35)
-at AutomationJourney2019.WEBSites.Udemy.POMs.HomePage.SignUpNewUser(HomePage.java:37)
-at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:27)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISLAMABDALAZEZP', ip: '10.8.6.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 20256, moz:profile: C:\Users\islam.ARCOM\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 070da61b-a510-498b-be52-698b10037b69
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at AutomationJourney2019.WEBSites.Tests.Helper.captureScreenshot(Helper.java:24)
+at AutomationJourney2019.WEBSites.Tests.TestBase.ScreenshotOnFailure(TestBase.java:236)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -245,30 +250,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UdemySignUpNewUser -->
-        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:02:20Z" name="ScreenshotOnFailure" finished-at="2019-04-14T13:02:20Z" duration-ms="141" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UdemySignUpNewUser status=FAILURE method=SignUpNewUserTestClass.UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:11:45Z" name="ScreenshotOnFailure" finished-at="2019-04-15T13:11:45Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:02:20Z" name="afterMethod" finished-at="2019-04-14T13:02:20Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:11:45Z" name="afterMethod" finished-at="2019-04-15T13:11:45Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="StopDriver()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:02:20Z" name="StopDriver" finished-at="2019-04-14T13:02:20Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="StopDriver()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:11:45Z" name="StopDriver" finished-at="2019-04-15T13:11:45Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StopDriver -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-14T13:02:20Z" name="afterSuite" finished-at="2019-04-14T13:02:20Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@53aad5d5]" started-at="2019-04-15T13:11:45Z" name="afterSuite" finished-at="2019-04-15T13:11:45Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

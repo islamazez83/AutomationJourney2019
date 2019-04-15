@@ -2,6 +2,7 @@ package AutomationJourney2019.WEBSites.Udemy.POMs;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 import AutomationJourney2019.WEBSites.Pages.PageBase;
@@ -10,7 +11,7 @@ public class HomePage extends PageBase {
 
 	public HomePage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		action = new Actions(driver);
 	}
 	
 	@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[4]/div[6]/div/button")
@@ -28,13 +29,36 @@ public class HomePage extends PageBase {
 	@FindBy(name = "password")
 	private WebElement PasswordTextBox;
 	
+	@FindBy(xpath = "/html/body/div[8]/div[2]/div/div/div/div/div/div/div/div/div[3]/div[2]/span/div/a")
+	private WebElement SignUpWithEmailButton; 
+	
+	@FindBy(id = "submit-id-submit")
+	private WebElement PopUpSignUpButton;
+	
+	@FindBy(className = "user-avatar user-avatar--initials")
+	public WebElement UserAvatar;
+	
+	@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[4]/div[8]/span/div/ul/li[13]/a")
+	private WebElement LogOutAnchor;
+	
+	@FindBy(className = "with-icon alert alert-success")
+	public WebElement LoggedOutLabel;
+	
 	public void SignUpNewUser(String FullName, String Email, String Password) 
 	{
 		clickButton(SignUpButton);
+		if (SignUpWithEmailButton.isDisplayed()) {
+			SignUpWithEmailButton.click();
+		}
 		waitForElementToBe("elementToBeClickable", FullNameTextBox);
 		setTextElementText(FullNameTextBox, FullName);
 		setTextElementText(EmailTextBox, Email);
 		setTextElementText(PasswordTextBox, Password);
+		clickButton(PopUpSignUpButton);
+		waitForElementToBe("visibilityOf", UserAvatar);
 	}
-
+	
+	public void LogOut() {
+		action.moveToElement(UserAvatar).moveToElement(LogOutAnchor).click().build().perform();
+	}
 }

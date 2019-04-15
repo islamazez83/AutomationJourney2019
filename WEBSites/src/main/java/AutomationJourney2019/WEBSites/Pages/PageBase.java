@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.Wait;
 public class PageBase {
 	protected WebDriver driver;
 	private JavascriptExecutor jse;
-	private Actions action;
+	public Actions action;
 	
 	public PageBase (WebDriver driver) 
 	{
