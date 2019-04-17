@@ -9,8 +9,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.DataProvider;
+import AutomationJourney2019.WEBSites.DataFileAdaptor;
 
-import AutomationJourney2019.WEBSites.DataFileReader;
 
 public class JSONDataReader {
   
@@ -19,7 +19,7 @@ public class JSONDataReader {
 	  Object[][] Data = new Object[2][3];
 	  int usersCount = 0;
 	  try {
-		  DataFileReader DFR = new DataFileReader();
+		  DataFileAdaptor DFR = new DataFileAdaptor();
 		JSONArray SignupUsers = DFR.ReadJSONData("Udemy/UdemyUserAccountsData.json");		
 		for(Object jsonObj : SignupUsers) 
 		{

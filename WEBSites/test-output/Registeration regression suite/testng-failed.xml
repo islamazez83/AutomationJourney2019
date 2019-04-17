@@ -10,7 +10,7 @@
           <include name="initializeDriver"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
-          <include name="UdemySignUpNewUser" invocation-numbers="0"/>
+          <include name="UdemySignUpNewUser" invocation-numbers="0 1"/>
           <include name="StopDriver"/>
           <include name="ScreenshotOnFailure"/>
         </methods>

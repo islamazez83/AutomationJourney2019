@@ -86,9 +86,20 @@ public class PageBase {
 	public void openPageURL(URL url) {
 		driver.navigate().to(url);
 	}
-	public Boolean isElementPresent(By by) {
+	public Boolean isElementPresent(String by, String LocatorValue) {
 		try {
-			driver.findElement(by);
+			switch (by) {
+			case "xpath":
+				driver.findElement(By.xpath(LocatorValue));
+				break;
+
+			case "className":
+				driver.findElement(By.className(LocatorValue));
+				break;
+				
+			default:
+				break;
+			}			
 			return true;
 		} catch (NoSuchElementException e) {
 			return false;

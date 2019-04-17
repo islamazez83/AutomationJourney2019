@@ -44,18 +44,25 @@ public class HomePage extends PageBase {
 	@FindBy(className = "with-icon alert alert-success")
 	public WebElement LoggedOutLabel;
 	
+	@FindBy(className = "alert alert-danger js-error-alert")
+	public WebElement SignUpErrorLabel;
+	
 	public void SignUpNewUser(String FullName, String Email, String Password) 
 	{
 		clickButton(SignUpButton);
-		if (SignUpWithEmailButton.isDisplayed()) {
+		if (isElementPresent("xpath", "/html/body/div[8]/div[2]/div/div/div/div/div/div/div/div/div[3]/div[2]/span/div/a")) {
 			SignUpWithEmailButton.click();
 		}
 		waitForElementToBe("elementToBeClickable", FullNameTextBox);
 		setTextElementText(FullNameTextBox, FullName);
 		setTextElementText(EmailTextBox, Email);
 		setTextElementText(PasswordTextBox, Password);
-		clickButton(PopUpSignUpButton);
-		waitForElementToBe("visibilityOf", UserAvatar);
+		clickButton(PopUpSignUpButton);		
+	}
+	
+	public boolean isElementBresen(String by, String LocatorValue) 
+	{
+		return isElementPresent(by, LocatorValue);
 	}
 	
 	public void LogOut() {

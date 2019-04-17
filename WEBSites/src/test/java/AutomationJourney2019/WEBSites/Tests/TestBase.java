@@ -9,6 +9,8 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -140,7 +142,7 @@ public class TestBase {
 		Options.addPreference("browser.download.folderList", 2);
 		Options.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf");
 		Options.addPreference("browser.download.manager.showWhenStarting", false);
-		Options.addPreference("pdfjs.disabled",true);
+		Options.addPreference("pdfjs.disabled",true);		
 		return Options;
 	}
 
@@ -159,6 +161,7 @@ public class TestBase {
         chromePrefs.put("profile.default.content_settings.popups", 0);
 		options.setExperimentalOption("prefs", chromePrefs);
 		options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		options.setCapability("--disable-javascript", false);		
 		//options.setCapability(CapabilityType.PROXY, proxy);
 		//options.setPreference("browser.cache.disk.parent_directory", PATH_TO_MY_PROFILE_CACHE);
 		return options;
@@ -247,5 +250,6 @@ public class TestBase {
 	}
 	public static void setWebSitesURL(URI[] webSitesURL) {
 		WebSitesURL = webSitesURL;
-	}
+	}	
+	
 }
