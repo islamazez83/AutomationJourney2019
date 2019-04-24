@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-04-17T15:22:06Z" name="Registeration regression suite" finished-at="2019-04-17T15:32:50Z" duration-ms="644125">
+  <suite started-at="2019-04-24T14:31:45Z" name="Registeration regression suite" finished-at="2019-04-24T14:42:35Z" duration-ms="649696">
     <groups>
     </groups>
-    <test started-at="2019-04-17T15:22:06Z" name="Test" finished-at="2019-04-17T15:32:50Z" duration-ms="644125">
+    <test started-at="2019-04-24T14:31:45Z" name="Test" finished-at="2019-04-24T14:42:35Z" duration-ms="649696">
       <class name="AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:22:00Z" name="initializeDriver" finished-at="2019-04-17T15:22:06Z" duration-ms="5269" status="PASS">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:31:39Z" name="initializeDriver" finished-at="2019-04-24T14:31:45Z" duration-ms="6265" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:22:06Z" name="beforeMethod" finished-at="2019-04-17T15:22:06Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:31:45Z" name="beforeMethod" finished-at="2019-04-24T14:31:45Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:22:06Z" name="UdemySignUpNewUser" data-provider="SignupUsersDP" finished-at="2019-04-17T15:27:23Z" duration-ms="316886" status="FAIL">
+        <test-method signature="UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:31:45Z" name="UdemySignUpNewUser" data-provider="SignupUsersDP" finished-at="2019-04-24T14:37:33Z" duration-ms="347311" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -40,25 +40,19 @@
               </value>
             </param>
           </params>
-          <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
+          <exception class="java.lang.IndexOutOfBoundsException">
             <message>
-              <![CDATA[Cannot deserialize instance of `org.json.simple.JSONObject` out of START_ARRAY token
- at [Source: (File); line: 1, column: 1]]]>
+              <![CDATA[Index 1 out-of-bounds for length 1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `org.json.simple.JSONObject` out of START_ARRAY token
- at [Source: (File); line: 1, column: 1]
-at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
-at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
-at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1139)
-at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1093)
-at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:600)
-at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
-at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
-at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
-at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2902)
-at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:30)
-at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:38)
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+at java.base/java.util.Objects.checkIndex(Objects.java:372)
+at java.base/java.util.ArrayList.set(ArrayList.java:454)
+at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:41)
+at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -86,30 +80,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.fasterxml.jackson.databind.exc.MismatchedInputException -->
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UdemySignUpNewUser -->
-        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:27:23Z" name="ScreenshotOnFailure" finished-at="2019-04-17T15:27:23Z" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:37:33Z" name="ScreenshotOnFailure" finished-at="2019-04-24T14:37:33Z" duration-ms="239" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UdemySignUpNewUser status=FAILURE method=SignUpNewUserTestClass.UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98] output={null}]]]>
+                <![CDATA[[TestResult name=UdemySignUpNewUser status=FAILURE method=SignUpNewUserTestClass.UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:27:23Z" name="afterMethod" finished-at="2019-04-17T15:27:23Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:37:33Z" name="afterMethod" finished-at="2019-04-24T14:37:33Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:27:23Z" name="beforeMethod" finished-at="2019-04-17T15:27:23Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:27:23Z" name="UdemySignUpNewUser" data-provider="SignupUsersDP" finished-at="2019-04-17T15:32:50Z" duration-ms="326682" status="FAIL">
+        <test-method signature="UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:37:33Z" name="UdemySignUpNewUser" data-provider="SignupUsersDP" finished-at="2019-04-24T14:42:34Z" duration-ms="300872" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -127,25 +117,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
+          <exception class="java.lang.IndexOutOfBoundsException">
             <message>
-              <![CDATA[Cannot deserialize instance of `org.json.simple.JSONObject` out of START_ARRAY token
- at [Source: (File); line: 1, column: 1]]]>
+              <![CDATA[Index 1 out-of-bounds for length 1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `org.json.simple.JSONObject` out of START_ARRAY token
- at [Source: (File); line: 1, column: 1]
-at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
-at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
-at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1139)
-at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1093)
-at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:600)
-at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
-at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
-at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
-at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2902)
-at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:30)
-at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:38)
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+at java.base/java.util.Objects.checkIndex(Objects.java:372)
+at java.base/java.util.ArrayList.set(ArrayList.java:454)
+at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:41)
+at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,30 +157,34 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.fasterxml.jackson.databind.exc.MismatchedInputException -->
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UdemySignUpNewUser -->
-        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:32:50Z" name="ScreenshotOnFailure" finished-at="2019-04-17T15:32:50Z" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:37:33Z" name="beforeMethod" finished-at="2019-04-24T14:37:33Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:42:35Z" name="ScreenshotOnFailure" finished-at="2019-04-24T14:42:35Z" duration-ms="149" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UdemySignUpNewUser status=FAILURE method=SignUpNewUserTestClass.UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98] output={null}]]]>
+                <![CDATA[[TestResult name=UdemySignUpNewUser status=FAILURE method=SignUpNewUserTestClass.UdemySignUpNewUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:32:50Z" name="afterMethod" finished-at="2019-04-17T15:32:50Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:42:35Z" name="afterMethod" finished-at="2019-04-24T14:42:35Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="StopDriver()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:32:50Z" name="StopDriver" finished-at="2019-04-17T15:32:50Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="StopDriver()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:42:35Z" name="StopDriver" finished-at="2019-04-24T14:42:35Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StopDriver -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98]" started-at="2019-04-17T15:32:50Z" name="afterSuite" finished-at="2019-04-17T15:32:50Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae]" started-at="2019-04-24T14:42:35Z" name="afterSuite" finished-at="2019-04-24T14:42:35Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

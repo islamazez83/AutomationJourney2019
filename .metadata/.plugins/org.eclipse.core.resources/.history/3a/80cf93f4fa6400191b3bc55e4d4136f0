@@ -1,0 +1,9 @@
+package AutomationJourney2019;
+
+public class User {
+
+	private String fullName;
+	private String Email;
+	private String Password;
+	private String IsUsed;
+}

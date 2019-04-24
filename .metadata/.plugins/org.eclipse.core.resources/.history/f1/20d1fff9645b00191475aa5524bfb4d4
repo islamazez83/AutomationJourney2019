@@ -1,9 +1,0 @@
-package AutomationJourney2019.WEBSites;
-
-public class JSONDataProvider {
-	public void ReadJSONData () 
-	{
-		String FilePath = System.getProperty(""user.dir)+
-	}
-
-}

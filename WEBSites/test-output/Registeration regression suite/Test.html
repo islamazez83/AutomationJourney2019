@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 17 17:22:06 EET 2019</td>
+<td>Started on:</td><td>Wed Apr 24 16:31:45 EET 2019</td>
 </tr>
-<tr><td>Total time:</td><td>644 seconds (644125 ms)</td>
+<tr><td>Total time:</td><td>649 seconds (649696 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,33 +76,23 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser()'><b>UdemySignUpNewUser</b><br>Test class: AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass<br>Parameters: Islam Abd Alazez Abd Alhamed, islamaldomyate10@gmail.com, talkha2014</td>
-<td><div><pre>com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `org.json.simple.JSONObject` out of START_ARRAY token
- at [Source: (File); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1139)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1093)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:600)
-	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
-	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2902)
-	at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:30)
-	at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:38)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace164757726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace164757726'><pre>com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `org.json.simple.JSONObject` out of START_ARRAY token
- at [Source: (File); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1139)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1093)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:600)
-	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
-	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2902)
-	at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:30)
-	at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:38)
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.set(ArrayList.java:454)
+	at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:41)
+	at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:39)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace310350177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace310350177'><pre>java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.set(ArrayList.java:454)
+	at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:41)
+	at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,37 +119,27 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>316</td>
-<td>AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98</td></tr>
+<td>347</td>
+<td>AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae</td></tr>
 <tr>
 <td title='AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser()'><b>UdemySignUpNewUser</b><br>Test class: AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass<br>Parameters: Hisham Shahin, arcomtest2110@gmail.com, talkha2014</td>
-<td><div><pre>com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `org.json.simple.JSONObject` out of START_ARRAY token
- at [Source: (File); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1139)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1093)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:600)
-	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
-	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2902)
-	at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:30)
-	at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:38)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1927776715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1927776715'><pre>com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `org.json.simple.JSONObject` out of START_ARRAY token
- at [Source: (File); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1139)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1093)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:600)
-	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
-	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2902)
-	at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:30)
-	at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:38)
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.set(ArrayList.java:454)
+	at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:41)
+	at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:39)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace769507769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace769507769'><pre>java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.set(ArrayList.java:454)
+	at AutomationJourney2019.WEBSites.DataFileAdaptor.UpdateJSONValue(DataFileAdaptor.java:41)
+	at AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass.UdemySignUpNewUser(SignUpNewUserTestClass.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -186,8 +166,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>326</td>
-<td>AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@534a5a98</td></tr>
+<td>300</td>
+<td>AutomationJourney2019.WEBSites.Udemy.Tests.SignUpNewUserTestClass@4d5650ae</td></tr>
 </table><p>
 </body>
 </html>

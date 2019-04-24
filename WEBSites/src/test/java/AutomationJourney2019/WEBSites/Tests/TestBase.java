@@ -142,7 +142,7 @@ public class TestBase {
 		Options.addPreference("browser.download.folderList", 2);
 		Options.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf");
 		Options.addPreference("browser.download.manager.showWhenStarting", false);
-		Options.addPreference("pdfjs.disabled",true);		
+		//Options.addPreference("pdfjs.disabled",true);		
 		return Options;
 	}
 
@@ -202,7 +202,7 @@ public class TestBase {
         {
         	System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Sources\\geckodriver.exe");
             driver = new FirefoxDriver(/*new System.Uri(Assembly.GetExecutingAssembly().CodeBase).AbsolutePath.Replace("%20", " ").TrimEnd("CSAutomatedUnitTest.DLL".ToCharArray()),*/ FirefoxOption());
-            driver.manage().deleteAllCookies();
+            //driver.manage().deleteAllCookies();
         }
         else if (browserName.toLowerCase().equals("ie"))
         {

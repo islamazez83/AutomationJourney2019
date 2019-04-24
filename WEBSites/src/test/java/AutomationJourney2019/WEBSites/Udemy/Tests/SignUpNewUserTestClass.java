@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 
+import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonParseException;
@@ -20,7 +21,7 @@ public class SignUpNewUserTestClass extends TestBase {
 	HomePage HomePageObject;
 	
 	@Test(dataProvider = "SignupUsersDP", dataProviderClass = JSONDataReader.class)
-  public void UdemySignUpNewUser(String FullName, String Email, String Password) throws InterruptedException, JsonParseException, JsonMappingException, IOException {
+  public void UdemySignUpNewUser(String FullName, String Email, String Password) throws InterruptedException, JsonParseException, JsonMappingException, IOException, ParseException {
 		getDriver().manage().deleteAllCookies();
 		HomePageObject = new HomePage(getDriver());
 		getDriver().navigate().to(getWebSitesURL()[0].toString());
@@ -35,7 +36,7 @@ public class SignUpNewUserTestClass extends TestBase {
 		HomePageObject.SignUpNewUser(FullName, Email, Password);
 		assertFalse(HomePageObject.isElementPresent("className", "alert alert-danger js-error-alert"));
 		DataFileAdaptor DFA = new DataFileAdaptor();
-		DFA.UpdateJSONValue("Udemy/UdemyUserAccountsData.json", "IsUsed", "Yes");
+		DFA.UpdateJSONValue("Udemy\\UdemyUserAccountsData.json", FullName,"IsUsed", "Yes");
 		HomePageObject.LogOut();
 		assertTrue(HomePageObject.LoggedOutLabel.isDisplayed());
   }

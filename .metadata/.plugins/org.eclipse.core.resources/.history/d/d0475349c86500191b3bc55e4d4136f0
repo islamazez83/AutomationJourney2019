@@ -1,0 +1,34 @@
+package AutomationJourney2019;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.List;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
+
+import AutomationJourney2019.WEBSites.DataFileAdaptor;
+
+public class Users {
+
+	private List<User> users;
+
+	public List<User> getUser(String FullUserName) throws FileNotFoundException, IOException, ParseException {
+		DataFileAdaptor DFA = new DataFileAdaptor();
+		List usersArray = DFA.ReadJSONData("Udemy/UdemyUserAccountsData.json");	
+		
+		for (User user2 : usersArray) {
+			User person = (User) JSONOBJ;
+			if (person.fullName.equals(FullUserName)) {
+				user.add(person);
+			}
+
+		}
+		return user;
+	}
+
+	public void setUser(List<User> user) {
+		this.user = user;
+	}
+}

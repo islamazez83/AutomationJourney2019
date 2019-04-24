@@ -4,11 +4,15 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.DataProvider;
+
+import AutomationJourney2019.User;
 import AutomationJourney2019.WEBSites.DataFileAdaptor;
 
 
@@ -19,14 +23,15 @@ public class JSONDataReader {
 	  Object[][] Data = new Object[2][3];
 	  int usersCount = 0;
 	  try {
-		  DataFileAdaptor DFR = new DataFileAdaptor();
-		JSONArray SignupUsers = DFR.ReadJSONData("Udemy/UdemyUserAccountsData.json");		
+		  DataFileAdaptor DFA = new DataFileAdaptor();
+		List<User> SignupUsers = DFA.ReadJSONData("Udemy/UdemyUserAccountsData.json");		
+		
 		for(Object jsonObj : SignupUsers) 
 		{
 			JSONObject person = (JSONObject) jsonObj;
 			if(person.get("IsUsed").toString().equals("No")) 
 			{
-				Data[usersCount][0] = person.get("Full name");
+				Data[usersCount][0] = person.get("FullName");
 				Data[usersCount][1] = person.get("Email");
 				Data[usersCount][2] = person.get("Password");
 				usersCount++;
